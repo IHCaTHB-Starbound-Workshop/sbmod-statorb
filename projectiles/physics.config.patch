@@ -1,0 +1,35 @@
+[
+  {
+    "op": "add",
+    "path": "/orb",
+    "value": {
+      "mass": 1,
+      "gravityMultiplier": 1,
+      "bounceFactor": 1,
+      "maxMovementPerStep": 1,
+      "collisionPoly": [
+        [
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "ignorePlatformCollision": false,
+      "airFriction": 1.0,
+      "liquidFriction": 1.0,
+      "groundFriction": 15,
+      "maximumCorrection": 0.75
+    }
+  }
+]

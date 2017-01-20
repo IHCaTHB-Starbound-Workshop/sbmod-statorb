@@ -1,0 +1,15 @@
+{
+  "projectileName" : "smalldrop",
+  "physics" : "grenade",
+  "timeToLive" : 0.01,
+  "image" : "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "actionOnReap" : [
+    {
+      "action": "config",
+      "file": "/projectiles/drop/smalldrop.config"
+    }
+  ],
+  "power" : 0,
+  "damageType" : "NoDamage",
+  "damageKind" : "applystatus"
+}

@@ -1,0 +1,20 @@
+{
+  "projectileName" : "healthorb0",
+  "physics" : "orb",
+  "bounces" : 1,
+  "timeToLive" : 3,
+  "renderLayer" : "Object+1",
+  "speed" : 20,
+  "image" : "orbred.png",
+  "lightColor" : [250, 116, 116],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "healthorb",
+      "inheritSpeedFactor" : 0
+    }
+  ],
+  "onlyHitTerrain" : true,
+  "hydrophobic" : false,
+  "emitters" : [ "sparks" ]
+}

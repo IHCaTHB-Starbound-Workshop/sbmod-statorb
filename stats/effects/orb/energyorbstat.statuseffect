@@ -1,0 +1,18 @@
+{
+  "name" : "energyorbstat",
+  "effectConfig" : {
+    "regenBonusAmount" : 0,
+    "emissionRate" : 2
+  },
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "/stats/effects/energyregen/energyregen.lua"
+  ],
+  "scriptDelta" : 0,
+
+  "animationConfig" : "/stats/effects/energyregen/energyregen.animation",
+
+  "label" : "Energy Regeneration",
+  "icon" : "/interface/statuses/energyregen.png"
+}

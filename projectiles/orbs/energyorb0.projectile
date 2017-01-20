@@ -1,0 +1,20 @@
+{
+  "projectileName" : "energyorb0",
+  "physics" : "orb",
+  "bounces" : 0,
+  "timeToLive" : 3,
+  "renderLayer" : "Object+1",
+  "speed" : 20,
+  "image" : "orbgreen.png",
+  "lightColor" : [118, 245, 79],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "energyorb",
+      "inheritSpeedFactor" : 0
+    }
+  ],
+  "onlyHitTerrain" : true,
+  "hydrophobic" : false,
+  "emitters" : [ "sparks" ]
+}

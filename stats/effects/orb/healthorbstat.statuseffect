@@ -1,0 +1,18 @@
+{
+  "name" : "healthorbstat",
+  "effectConfig" : {
+    "healAmount" : 15,
+    "emissionRate" : 10
+  },
+  "defaultDuration" : 1.5,
+
+  "scripts" : [
+    "/stats/effects/heal/heal.lua"
+  ],
+  "scriptDelta" : 0,
+
+  "animationConfig" : "/stats/effects/heal/heal.animation",
+
+  "label" : "Healing",
+  "icon" : "/interface/statuses/heal.png"
+}

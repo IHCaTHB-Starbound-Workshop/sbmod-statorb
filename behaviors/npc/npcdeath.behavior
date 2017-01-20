@@ -1,0 +1,30 @@
+{
+  "name": "npc-death",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/builders.lua"
+  ],
+  "parameters": {
+    "deathActions": [{
+      "name": "action-projectile",
+      "parameters": {
+        "projectileCount": 1,
+        "projectileType": "bigdrop",
+        "projectileParameters" : {},
+        "power" : 0,
+        "speed" : 20,
+        "aimDirection" : [-1, 2],
+        "inaccuracy" : 1,
+        "fireOffset" : [0, 0.5]
+      }
+    }]
+  },
+  "root": {
+    "title": "sequenceActions",
+    "type": "action",
+    "name": "sequenceActions",
+    "parameters": {
+      "actions": "<deathActions>"
+    }
+  }
+}

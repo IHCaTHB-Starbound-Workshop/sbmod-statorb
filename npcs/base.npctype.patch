@@ -1,0 +1,12 @@
+[
+  {
+    "op": "add",
+    "path": "/scripts/-",
+    "value": "/npcs/npcdeathhook.lua"
+  },
+  {
+    "op": "add",
+    "path": "/scriptConfig/deathBehavior",
+    "value": "npc-death"
+  }
+]

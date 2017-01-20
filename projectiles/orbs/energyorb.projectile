@@ -1,0 +1,34 @@
+{
+  "projectileName" : "energyorb",
+  "physics" : "orb",
+  "bounces" : -1,
+  "timeToLive" : 15,
+  "renderLayer" : "Object+1",
+  "speed" : 20,
+  "image" : "orbgreen.png",
+  "lightColor" : [118, 245, 79],
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "healcloud",
+      "config":{
+        "statusEffects" : ["energyorbstat"],
+        "damageTeam" : { "type": "environment" },
+        "damageType" : "IgnoresDef",
+        "damageKind" : "applystatus",
+        "lightColor" : [118, 245, 79]
+      }
+    },
+    {
+      "action" : "config",
+      "file" : "/projectiles/orbs/pickuporb.config"
+    }
+  ],
+  "power" : 0,
+  "damageType" : "IgnoresDef",
+  "damageKind" : "applystatus",
+  "damageTeam" : { "type": "environment" },
+  "damagePoly" : [ [-6, 0], [-4, -4], [0, -6], [4, -4], [6, 0], [4, 4], [0, 6], [-4, 4] ],
+  "emitters" : [ "sparks" ],
+  "persistentAudio" : "/sfx/projectiles/zone_energy_loop.ogg"
+}
