@@ -1,12 +1,12 @@
 {
   "author" : "isaac as THE HONEY BADGER",
-  "description" : "^#5aa9d6;Drops ''heal-on-pickup'' recovery orbs a la Zelda, Diablo, Castlevania, et al.^reset;
+  "description" : "^#5aa9d6;Adds ''heal-on-pickup'' recovery orbs a la Zelda, Diablo, Castlevania, et al.^reset;
 
 Orbs are dropped by NPCs, breakable objects, and all monster types. Breakable objects drop orbs slightly less frequently than standard. NPCs and tougher monsters drop roughly twice as many orbs as standard.
 
 Artwork is derived from vanilla assets and should be considered WIP and subject to change.
 
-Any modded entities and objects would need to be patched in explicitly.
+Any entities and objects added by mods would need to be patched in explicitly.
 
 For more, click the MEGATHREAD link from the steam page.",
   "friendlyName" : "Stat Orbs: Regeneration and Recovery",
