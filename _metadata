@@ -6,7 +6,7 @@ Orbs are dropped by NPCs, breakable objects, and all monster types. Breakable ob
 
 Artwork is derived from vanilla assets and should be considered WIP and subject to change.
 
-Any entities and objects added by mods would need to be patched in explicitly.
+All other mods' NPCs should function with this mod out of the box. Any monsters and objects added by mods would need to be patched in explicitly.
 
 For more, click the MEGATHREAD link from the steam page.",
   "friendlyName" : "Stat Orbs: Regeneration and Recovery",
