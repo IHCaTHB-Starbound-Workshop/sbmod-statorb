@@ -1,0 +1,19 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/behaviorConfig/deathActions/-",
+    "value": {
+      "name": "action-projectile",
+      "parameters": {
+        "projectileCount": 1,
+        "projectileType": "drop",
+        "projectileParameters" : {},
+        "power" : 0,
+        "speed" : 20,
+        "aimDirection" : [-1, 2],
+        "inaccuracy" : 1,
+        "fireOffset" : [0, 0.5]
+      }
+    }
+  }
+]
