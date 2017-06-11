@@ -3,8 +3,9 @@
 
 v0.2 2017-06-10
 + FU monsters and breakables
-* updated for Starbound v1.3
+* updated for Starbound 1.3
 * license update
+* banner update
 
 v0.1 2017-01-20
 + health orb
