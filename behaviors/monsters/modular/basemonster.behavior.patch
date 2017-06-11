@@ -1,8 +1,8 @@
 [
   {
     "op": "add",
-    "path": "/parameters/deathActions/-",
-    "value": {
+    "path": "/parameters/deathActions",
+    "value": [{
       "name": "action-projectile",
       "parameters": {
         "projectileCount": 1,
@@ -14,6 +14,6 @@
         "inaccuracy" : 1,
         "fireOffset" : [0, 0.5]
       }
-    }
+    }]
   }
 ]

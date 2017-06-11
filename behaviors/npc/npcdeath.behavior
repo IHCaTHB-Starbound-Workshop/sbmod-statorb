@@ -24,7 +24,7 @@
     "type": "action",
     "name": "sequenceActions",
     "parameters": {
-      "actions": "<deathActions>"
+      "actions": {"key": "<deathActions>"}
     }
   }
 }

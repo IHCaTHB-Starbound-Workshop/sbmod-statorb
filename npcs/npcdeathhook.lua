@@ -12,7 +12,6 @@ function init()
     local groundPosition = findGroundPosition(position, -20, 3)
     storage.spawnPosition = groundPosition or position
   end
-  BData:setPosition("spawn", storage.spawnPosition)
 
   local questOutbox = Outbox.new("questOutbox", ContactList.new("questContacts"))
   self.quest = QuestParticipant.new("quest", questOutbox)
@@ -20,20 +19,23 @@ function init()
   self.quest.onOfferedQuestFinished = offeredQuestFinished
 
   if config.getParameter("behavior") then
-    self.behavior = root.behavior(config.getParameter("behavior"), config.getParameter("behaviorConfig", {}))
-    self.behaviorState = self.behavior:init(_ENV)
+    self.behavior = behavior.behavior(config.getParameter("behavior"), config.getParameter("behaviorConfig", {}), _ENV)
+
+    self.board = self.behavior:blackboard()
+    self.board:setPosition("spawn", storage.spawnPosition)
   end
 
   npc.setInteractive(true)
-  script.setUpdateDelta(1)
+  script.setUpdateDelta(10)
 
   self.behaviorConfig = config.getParameter("behaviorConfig", {})
   if personality().behaviorConfig then
-    self.behaviorConfig = parseArgs(personality().behaviorConfig, self.behaviorConfig)
+    self.behaviorConfig = applyDefaults(personality().behaviorConfig, self.behaviorConfig)
   end
+
   local deathBehavior = config.getParameter("deathBehavior")
   if deathBehavior then
-    self.deathBehavior = root.behavior(deathBehavior, config.getParameter("behaviorConfig", {}))
+    self.deathBehavior = behavior.behavior(deathBehavior, config.getParameter("behaviorConfig", {}), _ENV, self.behavior:blackboard())
   end
 
   self.primary = npc.getItemSlot("primary")
@@ -45,8 +47,6 @@ function init()
   self.debug = false
 
   mcontroller.setAutoClearControls(false)
-  self.behaviorTickRate = 10
-  self.behaviorTick = math.random(1, self.behaviorTickRate)
 
   self.stuckCheckTime = config.getParameter("stuckCheckTime", 3.0)
   self.stuckCheckTimer = 0.1
@@ -82,7 +82,6 @@ function die()
   tenant.backup()
   spawnDrops()
   if self.deathBehavior then
-    local deathBehaviorState = self.deathBehavior:init(_ENV)
-    self.deathBehavior:run(deathBehaviorState, script.updateDt())
+    self.deathBehavior:run(script.updateDt())
   end
 end
