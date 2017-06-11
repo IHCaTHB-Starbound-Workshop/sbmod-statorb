@@ -2,8 +2,8 @@
 # documentation
 last updated 2017-06-10 for version 0.2
 
-##backend
-###projectiles
+## backend
+### projectiles
 bigdrop
 drop
 randomdrop
@@ -13,17 +13,17 @@ energyorb0
 healthorb
 healthorb0
 
-###physics
+### physics
 orb
 
-###status effects
+### status effects
 energyorbstat
 healthorbstat
 
-###behaviors
+### behaviors
 npc-death
 
-###lua
+### lua
 orbcontainer.lua
 >found at /objects/orbcontainer
 >spawns projectile on object smash
