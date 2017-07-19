@@ -6,6 +6,7 @@
   "renderLayer" : "Object+1",
   "speed" : 20,
   "image" : "orbred.png",
+  "fullbright" : true,
   "lightColor" : [250, 116, 116],
   "actionOnReap" : [
     {

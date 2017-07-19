@@ -6,6 +6,7 @@
   "renderLayer" : "Object+1",
   "speed" : 20,
   "image" : "orbgreen.png",
+  "fullbright" : true,
   "lightColor" : [118, 245, 79],
   "actionOnReap" : [
     {
